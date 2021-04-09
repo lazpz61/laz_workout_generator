@@ -1,0 +1,40 @@
+.header-wrapper {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(59, 255, 164, 0.747);
+
+    .left-column, .right-column {
+        margin: 10px 20px;
+        
+    }
+
+    .left-column {
+        img {
+        width: 75px;
+        }
+    }
+
+        .right-column{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            justify-items: right;
+            align-items: center;
+            gap: 25px;
+
+            .h1 {
+                border: solid;
+                background-color: white;
+            }
+            .h1:active {
+                box-shadow: 5px 5px grey ;
+                border-radius: 5px;
+
+            }
+
+    }
+
+
+
+}
