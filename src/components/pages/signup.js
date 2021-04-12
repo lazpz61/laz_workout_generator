@@ -22,7 +22,7 @@ export default class Signup extends Component {
        return (
            <div className='signup-wrapper'>
                <div className="signup-header">Sign Up Free to start generating workouts</div>
-               <form>
+               <form onSubmit={this.handleSubmit}>
                    <input
                    type="text"
                    value={this.state.username}

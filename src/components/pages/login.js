@@ -22,13 +22,13 @@ export default class Login extends Component {
                    type="text"
                    placeholder="Username"
                    name="username"
-                   onchange={this.function}
+                   onChange={this.function}
                    />
                    <input
                    type="password"
                    placeholder="Password"
                    name="password"
-                   onchange={this.function}
+                   onChange={this.function}
                    />
                    <button type="submit">Login</button>
                </form>
