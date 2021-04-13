@@ -3,31 +3,46 @@ let workout = [
     {
         "equiptment": "Body Weight",
         "exercise": "Pushups",
-        "id": 1,
         "muscle_group": "Upper Body"
     },
     {
         "equiptment": "Body Weight",
-        "exercise": "Pushups",
-        "id": 2,
+        "exercise": "",
         "muscle_group": "Upper Body"
     },
     {
         "equiptment": "Body Weight",
         "exercise": "SitUps",
-        "id": 3,
         "muscle_group": "Upper Body"
     },
     {
         "equiptment": "Body Weight",
         "exercise": "HandStand",
-        "id": 4,
         "muscle_group": "Upper Body"
     },
     {
         "equiptment": "Body Weight",
         "exercise": "Ab Crunches",
-        "id": 5,
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Squats",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Calf Raisers",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Mountain Climbers",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Jumping Jacks",
         "muscle_group": "Lower Body"
     }
 ]
