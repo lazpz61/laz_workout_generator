@@ -46,6 +46,20 @@ export default class Signup extends Component {
             })
             .then(response => response.json())
             .then(data => {
+                if (data === "Error: choose another username") {
+                    this.setState ({
+                        error: true,
+                        errorText: "Error: choose another username"
+                    })
+                } else {
+                    this.setState({
+                        username: "",
+                        password: "",
+                        confirmPassword: "",
+                        error: true,
+                        errorText: "Signup Successful"
+                    })
+                }
             })
             .catch(error => {
                 console.log("error creating user", error)
@@ -54,7 +68,7 @@ export default class Signup extends Component {
                     errorText: "Error: Please try later..."
                 })
             })
-            
+            // TODO: install cookies to push to home page
         }
 }
    
