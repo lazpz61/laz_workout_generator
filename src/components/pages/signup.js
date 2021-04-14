@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Cookies from "js-cookie";
+import Cookies from "js-cookie";
 
 export default class Signup extends Component {
     constructor(props) {
@@ -12,15 +12,14 @@ export default class Signup extends Component {
         error: false,
         errorText: ""
        }
-       this.handleChange = this.handleChange.bind(this);
-       this.handleSubmit = this.handleSubmit.bind(this);
+       
    }
 
-   handleChange(event) {
+   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value })
    }
 
-   handleSubmit(event) {
+   handleSubmit = event => {
     event.preventDefault()
     if (this.state.username === "" || this.state.password ==="" || this.state.confirmPassword === "") {
         this.setState({
@@ -59,6 +58,8 @@ export default class Signup extends Component {
                         error: true,
                         errorText: "Signup Successful"
                     })
+                    Cookies.set("username", this.state.username);
+                    this.props.history.push("/generator")
                 }
             })
             .catch(error => {
@@ -68,7 +69,7 @@ export default class Signup extends Component {
                     errorText: "Error: Please try later..."
                 })
             })
-            // TODO: install cookies to push to home page
+ 
         }
 }
    
