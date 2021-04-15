@@ -15,11 +15,11 @@ export default class Signup extends Component {
        
    }
 
-   handleChange = event => {
+   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value })
    }
 
-   handleSubmit = event => {
+   handleSubmit = (event) => {
     event.preventDefault()
     if (this.state.username === "" || this.state.password ==="" || this.state.confirmPassword === "") {
         this.setState({
@@ -51,15 +51,8 @@ export default class Signup extends Component {
                         errorText: "Error: choose another username"
                     })
                 } else {
-                    this.setState({
-                        username: "",
-                        password: "",
-                        confirmPassword: "",
-                        error: true,
-                        errorText: "Signup Successful"
-                    })
                     Cookies.set("username", this.state.username);
-                    this.props.history.push("/generator")
+                    this.props.history.push("/")
                 }
             })
             .catch(error => {

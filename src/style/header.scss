@@ -23,18 +23,27 @@
             align-items: center;
             gap: 25px;
 
-            a {
+            a, span{
                 border: solid;
                 border-radius: 5px;
                 background-color: white;
                 font-size: 2rem;
             }
-            a:active {
+            a:active, span:active {
                 box-shadow: 5px 5px grey ;
                 border-radius: 5px;
+                cursor: default;
 
             }
+            span:hover {
+                cursor: pointer;
+            }
 
+    }
+    .portal-generator {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        align-items: right;
     }
 
 
