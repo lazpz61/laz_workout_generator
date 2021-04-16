@@ -1,11 +1,25 @@
 import React, { Component } from 'react'
 
+
 export default class Generator extends Component {
     constructor(props) {
        super(props)
 
-       this.state = {}
+       this.state = {
+           data: [],
+           optionState: this.props.optionState
+       }
+       this.componentWillMount = this.componentWillMount.bind(this)
    }
+
+componentWillMount(){
+    // let workoutList = []
+    fetch("https://lmp-laz-workout-api.herokuapp.com/workout/get")
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
+// renderWorkouts
 
    render() {
        return (
@@ -16,6 +30,7 @@ export default class Generator extends Component {
                     
                     <select 
                     name="style"
+                    value={this.optionState}
                     >
                         <option  value="">Build Strength</option>
                         <option value="">Add Volume</option>
@@ -26,6 +41,7 @@ export default class Generator extends Component {
                 
                     <select
                     name="muscle_groups"
+                    value={this.optionState}
                     >
                         <option value="">Upper Body</option>
                         <option value="">Core</option>
@@ -36,6 +52,7 @@ export default class Generator extends Component {
                 
                     <select
                     name="equiptment"
+                    value={this.optionState}
                     >
                         <option value="">BodyWeight</option>
                         <option value="">Dumbell</option>
