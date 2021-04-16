@@ -7,7 +7,9 @@ export default class Generator extends Component {
 
        this.state = {
            data: [],
-           optionState: this.props.optionState
+           optionStyle: "",
+           optionMuscle: "",
+           optionEquiptment: ""
        }
        this.componentWillMount = this.componentWillMount.bind(this)
    }
@@ -17,6 +19,7 @@ componentWillMount(){
     fetch("https://lmp-laz-workout-api.herokuapp.com/workout/get")
     .then(response => response.json())
     .then(data => console.log(data))
+    .catch(error => console.log("error bringing in workouts", error))
 }
 
 // renderWorkouts
@@ -30,18 +33,18 @@ componentWillMount(){
                     
                     <select 
                     name="style"
-                    value={this.optionState}
+                    value={this.state.option}
                     >
-                        <option  value="">Build Strength</option>
-                        <option value="">Add Volume</option>
-                        <option value="">Increase Endurance</option>
+                        <option  value="build strength">Build Strength</option>
+                        <option  value="add volume">Add Volume</option>
+                        <option value="increase endurance">Increase Endurance</option>
                     </select>
                
                <label htmlFor="muscle_groups">Muscle Groups</label>
                 
                     <select
                     name="muscle_groups"
-                    value={this.optionState}
+                    value={this.state.optionMuscle}
                     >
                         <option value="">Upper Body</option>
                         <option value="">Core</option>
@@ -52,7 +55,7 @@ componentWillMount(){
                 
                     <select
                     name="equiptment"
-                    value={this.optionState}
+                    value={this.state.optionEquiptment}
                     >
                         <option value="">BodyWeight</option>
                         <option value="">Dumbell</option>
