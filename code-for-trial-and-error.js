@@ -70,3 +70,9 @@ console.log(muscleGroup);
 
 
 https://stackoverflow.com/questions/31117260/how-to-get-a-list-of-key-values-from-array-of-objects-javascript
+
+// will need this loop for when I need to pull out a certain amount of workouts
+
+// for (let i = 0; i < 6; i++) {
+    // console.log(workout[i]); <-- the bracket may not be used since we will be working with an array of objects
+// }

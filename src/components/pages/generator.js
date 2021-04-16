@@ -11,6 +11,10 @@ export default class Generator extends Component {
            optionMuscle: "",
            optionEquiptment: ""
        }
+
+
+    //    this.handleChange = this.handleChange.bind(this)
+    //    this.handleSubmit = this.handleSubmit.bind(this)
        this.componentWillMount = this.componentWillMount.bind(this)
    }
 
@@ -18,7 +22,7 @@ componentWillMount(){
     // let workoutList = []
     fetch("https://lmp-laz-workout-api.herokuapp.com/workout/get")
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => console.log("Response from Workout API",data))
     .catch(error => console.log("error bringing in workouts", error))
 }
 
@@ -35,9 +39,9 @@ componentWillMount(){
                     name="style"
                     value={this.state.option}
                     >
-                        <option  value="build strength">Build Strength</option>
-                        <option  value="add volume">Add Volume</option>
-                        <option value="increase endurance">Increase Endurance</option>
+                        <option  value="Build Strength">Build Strength</option>
+                        <option  value="Add Volume">Add Volume</option>
+                        <option value="Increase Endurance">Increase Endurance</option>
                     </select>
                
                <label htmlFor="muscle_groups">Muscle Groups</label>
@@ -46,9 +50,9 @@ componentWillMount(){
                     name="muscle_groups"
                     value={this.state.optionMuscle}
                     >
-                        <option value="">Upper Body</option>
-                        <option value="">Core</option>
-                        <option value="">Lower Body</option>
+                        <option value="Upper Body">Upper Body</option>
+                        <option value="Core">Core</option>
+                        <option value="Lower Body">Lower Body</option>
                     </select>
                
                <label htmlFor="equiptment">Equiptment</label>
@@ -57,10 +61,10 @@ componentWillMount(){
                     name="equiptment"
                     value={this.state.optionEquiptment}
                     >
-                        <option value="">BodyWeight</option>
-                        <option value="">Dumbell</option>
-                        <option value="">Machines</option>
-                        <option value="">Barbell</option>
+                        <option value="Body Weight">BodyWeight</option>
+                        <option value="Dumbell">Dumbell</option>
+                        <option value="Machines">Machines</option>
+                        <option value="Barbell">Barbell</option>
                     </select>
 
                 <button className="btn" type="submit">Generate Workout</button>
