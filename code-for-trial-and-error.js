@@ -1,51 +1,3 @@
-// Sampple Data that im looking to receive from DB
-let workout = [
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Pushups",
-        "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "",
-        "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "SitUps",
-        "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "HandStand",
-        "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Ab Crunches",
-        "muscle_group": "Lower Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Squats",
-        "muscle_group": "Lower Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Calf Raisers",
-        "muscle_group": "Lower Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Mountain Climbers",
-        "muscle_group": "Lower Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Jumping Jacks",
-        "muscle_group": "Lower Body"
-    }
-]
 // Might need this at an individual level
 let workouts =  workout.find(workout => workout.equiptment === "Body Weight" && workout.muscle_group === "Upper Body");
 
@@ -64,6 +16,9 @@ console.log(muscleGroup);
 
 let muscleGroup = workout.filter(workout => workout.muscle_group === "Upper Body" && workout.equiptment === "Bench");
 
+
+let muscleGroup = workout.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
+
 console.log(muscleGroup);
 
 // Now figure out how to extract each workout and give a random 5 based on Style select
@@ -73,6 +28,24 @@ https://stackoverflow.com/questions/31117260/how-to-get-a-list-of-key-values-fro
 
 // will need this loop for when I need to pull out a certain amount of workouts
 
-// for (let i = 0; i < 6; i++) {
-    // console.log(workout[i]); <-- the bracket may not be used since we will be working with an array of objects
-// }
+for (let i = 0; i < 6; i++) {
+    console.log(workout[i]); 
+}   <-- the bracket may not be used since we will be working with an array of objects
+
+
+// to find the location on the page for image mapper
+
+  document.addEventListener('mousemove', (e) =>{
+    console.log(`Mouse X: ${e.clientX}, Mouse Y: ${e.clientY}`);
+});
+
+// Reserved for Workout-index
+
+image (locations) :
+
+Upper Body:  Top Left x:158 y:224 / Bottom Right x:244 y:267
+
+Core: Top Left x:182 y:280 / Botttom Right x:241 y:368
+
+LowerBody: Left LegTop x:163 y:369 / Left Leg bottom x:172 y:626 / Right Leg Top x:219 y:411 Right Leg Top x: 219 Y:411 Right Leg Bottom x:262 y:638
+

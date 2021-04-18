@@ -1,0 +1,49 @@
+// Sampple Data that im looking to receive from DB
+
+let workout = [
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Pushups",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "SitUps",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "HandStand",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Ab Crunches",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Squats",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Calf Raisers",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Mountain Climbers",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Jumping Jacks",
+        "muscle_group": "Lower Body"
+    }
+]

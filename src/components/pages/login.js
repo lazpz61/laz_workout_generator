@@ -38,7 +38,6 @@ export default class Login extends Component {
                })
            })
            .then(response => response.json())
-        //    console.log(response)
            .then(data => {
                if (data ==="User not verified"){
                    this.setState({
@@ -61,7 +60,6 @@ export default class Login extends Component {
        }
    }
 
-//    Todo -  need to add the functions to get this to fetch the API, so first deploy the API to heroku and then apply the POST Restful API's
 
    render() {
        return (

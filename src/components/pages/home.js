@@ -8,8 +8,9 @@ export default function homepage() {
        <div className='home-wrapper'>
             <h1 className="header-home">Laz's Workout Generator</h1> 
             <Link to="/generator">
-                <div>Click Globe to Generate Workout</div>
+                <div className="home-msg2">Click below for free workout Generator</div>
                 <img src={globe} alt=""/>
+                <div className="home-msg2">To access workout index, you will need to sign up with an account</div>
             </Link>
             
        </div>
