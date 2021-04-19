@@ -7,11 +7,11 @@ export default function homepage() {
    return (
        <div className='home-wrapper'>
             <h1 className="header-home">Laz's Workout Generator</h1> 
-            <Link to="/generator">
-                <div className="home-msg2">Click below for free workout Generator</div>
-                <img src={globe} alt=""/>
-                <div className="home-msg2">To access workout index, you will need to sign up with an account</div>
-            </Link>
+                <div className="home-msg">Click Below For Free Workout Generator</div>
+                    <Link className="generator" to="/generator">
+                        <img src={globe} alt=""/>
+                    </Link>
+                <div className="home-msg">To Access Workout Index, You Will Need To Sign Up With An Account</div>
             
        </div>
    )

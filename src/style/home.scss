@@ -7,13 +7,19 @@
     background: radial-gradient(#00DB2A,#146414);
     height: 100vh;
 
-// TODO - create the Login and Signup pages and go to the back end and push the backend to Heroku
-    .header-home {
+    .home-msg {
+        display: flex;
+        justify-content: center;
+        font-size: 1.10rem;
+    }
+
+     .header-home{
         display: flex;
         justify-content: center;
     }
-
 }
+
+
 
 
 // Other Colors to use 

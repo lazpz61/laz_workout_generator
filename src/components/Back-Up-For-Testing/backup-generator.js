@@ -75,7 +75,7 @@ handleSubmit(event) {
 
    render() {
        return (
-           <div className='generator-wrapper'>
+           <div className='generator=wrapper'>
                <h1>This will be where the workout generator will be placed</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="style">Style</label>

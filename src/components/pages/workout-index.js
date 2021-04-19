@@ -33,7 +33,7 @@ export default class WorkoutINdex extends Component {
 
        return (
            <div className='workout-index-wrapper'>
-               This will be where the workout index will be placed
+               <h3>Please Select a Muscle Group to view all workouts in the index</h3>
                <ImageMapper
                 src={muscleBody}
                 width={800} 

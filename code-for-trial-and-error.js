@@ -7,7 +7,7 @@ let workouts = workout.filter(workout => workout.equiptment === "Body Weight");
 
 console.log(workouts);
 
-let muscleGroup = workout.filter(workout => workout.muscle_group === "Upper Body");
+let muscleGroup = workout.filter(workout => workout.muscle_group === "Upper Body"); // TODO:  might be used individually to get workouts by click on the workout index. !!!!!
 
 console.log(muscleGroup);
 
