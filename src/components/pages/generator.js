@@ -61,9 +61,18 @@ handleSubmit(event) {
     this.styleRender();
     const workouts = this.state.data
     console.log("array of objects", workouts)
-    // console.log(workouts[4].exercise)
+
     let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
     console.log("did this conditional work",listofWorkouts)
+
+    let workoutcontainer = []
+    for (let i = 0; i <5; i++) {
+        let randomWorkout = listofWorkouts[Math.floor(Math.random() * 5)];
+        workoutcontainer.push(randomWorkout)
+    }
+    console.log("did random work", workoutcontainer)
+
+
 
 }
 

@@ -20,7 +20,6 @@ export default class WorkoutINdex extends Component {
    }
 
    componentDidMount(){
-    // let workoutList = []
     fetch("https://lmp-laz-workout-api.herokuapp.com/workout/get")
     .then(response => response.json())
     .then(data => console.log("Response from Workout API",data))
