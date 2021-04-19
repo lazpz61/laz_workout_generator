@@ -10,7 +10,8 @@ export default class Generator extends Component {
            optionStyle: "",
            optionMuscle: "",
            optionEquiptment: "",
-           optionMsg: ""
+           optionMsg: "",
+           filteredContainer: []
        }
        
        this.handleStyleChange = this.handleStyleChange.bind(this);
@@ -61,9 +62,21 @@ handleSubmit(event) {
     this.styleRender();
     const workouts = this.state.data
     console.log("array of objects", workouts)
-    // console.log(workouts[4].exercise)
+
     let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
     console.log("did this conditional work",listofWorkouts)
+
+    let workoutcontainer = []
+    for (let i = 0; i <5; i++) {
+        let randomWorkout = listofWorkouts[Math.floor(Math.random() * listofWorkouts.length)];
+        workoutcontainer.push(randomWorkout)
+    }
+    this.setState({
+        filteredContainer: workoutcontainer
+    })
+
+// fixduplicate randoms
+//render the exercies on the screen 
 
 }
 
@@ -75,7 +88,7 @@ handleSubmit(event) {
 
    render() {
        return (
-           <div className='generator=wrapper'>
+           <div className='generator-wrapper'>
                <h1>This will be where the workout generator will be placed</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="style">Style</label>
@@ -121,6 +134,7 @@ handleSubmit(event) {
                 </form>
                 <h3>For each workout perform </h3>
                 <div className="style-render">{this.state.optionMsg}</div>
+                
                 {/* Utilize this part to show the workouts based on the the chouies made by the user */}
                 
            </div>

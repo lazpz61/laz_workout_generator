@@ -4,6 +4,15 @@
     display: grid;
     justify-content: center;
     grid-template-columns: auto;
-    background: radial-gradient(#00DB2A,#146414);
     height: 100vh;
+    
+}
+
+.generator-wrapper {
+    background-image: url("../../static/assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #B287A3;
+    background-size: 300px;
+    
 }

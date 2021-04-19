@@ -10,7 +10,8 @@ export default class Generator extends Component {
            optionStyle: "",
            optionMuscle: "",
            optionEquiptment: "",
-           optionMsg: ""
+           optionMsg: "",
+           filteredContainer: []
        }
        
        this.handleStyleChange = this.handleStyleChange.bind(this);
@@ -66,18 +67,18 @@ handleSubmit(event) {
     console.log("did this conditional work",listofWorkouts)
 
     let workoutcontainer = []
-    for (let i = 0; i <5; i++) {
-        let randomWorkout = listofWorkouts[Math.floor(Math.random() * 5)];
+    for (let i=0; i<5; i++) {
+        let randomWorkout = listofWorkouts[Math.floor(Math.random() * listofWorkouts.length)];
         workoutcontainer.push(randomWorkout)
     }
-    console.log("did random work", workoutcontainer)
+    this.setState({
+        filteredContainer: workoutcontainer
+    })
 
+//TODO: fixd uplicate randoms
 
 
 }
-
-        
-
 
 // #TODO 
 // renderWorkouts this is going to be put inside of the handlesubmit method somehow
@@ -130,6 +131,7 @@ handleSubmit(event) {
                 </form>
                 <h3>For each workout perform </h3>
                 <div className="style-render">{this.state.optionMsg}</div>
+                
                 {/* Utilize this part to show the workouts based on the the chouies made by the user */}
                 
            </div>
