@@ -93,7 +93,7 @@ return(
    render() {
        return (
            <div className='generator-wrapper'>
-               <h1>This will be where the workout generator will be placed</h1>
+               <h1>Please Make Your Selections Below to Start Generating Workout</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="style">Style</label>
                         

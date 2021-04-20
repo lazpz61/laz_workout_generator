@@ -1,52 +1,71 @@
 import React, { Component } from 'react'
 import ImageMapper from 'react-image-mapper';
 
-import muscleBody from "../../../static/assets/images/muscles-body.png";
+import muscleBody from "../../../static/assets/images/body-front.png";
 
 
-export default class WorkoutINdex extends Component {
+export default class WorkoutIndex extends Component {
     constructor(props) {
        super(props)
 
        this.state = {
            data: [],
-           clickedUpperBody: "",
-           clickedCore: "",
-           clickedLowerBody: ""
+           clickedMuscleGroup: "",
+           filteredContainer: []
        }
 
 
-       this.componentDidMount = this.componentDidMount.bind(this)
+       this.componentDidMount = this.componentDidMount.bind(this);
+       this.handleClick = this.handleClick.bind(this);
    }
 
-   componentDidMount(){
-    fetch("https://lmp-laz-workout-api.herokuapp.com/workout/get")
-    .then(response => response.json())
-    .then(data => console.log("Response from Workout API",data))
-    .catch(error => console.log("error bringing in workouts", error))
-}
+    componentDidMount(){
+        fetch("https://lmp-laz-workout-api.herokuapp.com/workout/get")
+        .then(response => response.json())
+        .then(responseWorkoutData => this.setState({
+            data: responseWorkoutData
+        }))
+        .catch(error => console.log("error bringing in workouts", error))
+    }
 
-// TODO --- onClickHandlers methods
+    handleClick(event){
+        console.log(event)
+        this.setState({ clickedMuscleGroup: event.name})
+        const workouts = this.state.data
+        console.log("array of objects", workouts)
+        let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.clickedMuscleGroup);
+        console.log("listofWorkouts", listofWorkouts)
+        this.setState({filteredContainer: listofWorkouts})
+    }
 
-   render() {
-       const Map = {
-           name: "my-map",
-           areas: [
-               {name:"Upper Body", shape: "circle", coords: [175, 140, 20], fillColor: "red"},
-               {name:"Core", shape: "circle", coords: [205, 185, 20], fillColor: "red"},
-               {name:"Lower Body", shape: "circle", coords: [170, 350, 20], fillColor: "red"}
-           ]
+    renderComponents(){
+        return 
+    }
 
-       }
+    render() {
+        const Map = {
+            name: "my-map",
+            areas: [
+                {name:"Upper Body", shape: "circle", coords: [150, 120, 20], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [110, 140, 10], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [195, 120, 20], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [235, 140, 10], fillColor: "#379392"},
+                {name:"Core", shape: "circle", coords: [172, 175, 20], fillColor: "#379392"},
+                {name:"Lower Body", shape: "circle", coords: [140, 290, 20], fillColor: "#379392"},
+                {name:"Lower Body", shape: "circle", coords: [200, 290, 20], fillColor: "#379392"}
+            ]
 
-       return (
-           <div className='workout-index-wrapper'>
-               <h3>Hover Over Muscle Group To Access All W</h3>
-               <ImageMapper src={muscleBody} width={800} 
+        }
+
+        return (
+            <div className='workout-index-wrapper'>
+                <h3>Hover Over Muscle Group To Access All Workouts</h3>
+                <ImageMapper src={muscleBody} width={350} 
                 map={Map}
+                onClick={event => this.handleClick(event)}
                 />
-               
-           </div>
-       )
-   }
+                
+            </div>
+        )
+    }
 }
