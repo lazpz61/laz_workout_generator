@@ -52,8 +52,11 @@ styleRender(event) {
     }
     if(this.state.optionStyle === "Increase Endurance"){
         this.setState({optionMsg: "4 Sets to 12-15 Repitions"})
-    } else if (this.state.optionStyle === "") {
-        this.setState({optionMsg: ""})
+    }   if(this.state.optionMuscle === "Please Select Muscle Group to Generate Workout"){
+        this.setState({optionMsg: "4 Sets to 12-15 Repitions"})
+    }
+    else if (this.state.optionStyle === "") {
+        this.setState({optionMsg: "Please Select a Style, Muscle group and Equiptment to Genereate Workout"})
     }
 }
 
@@ -66,25 +69,26 @@ handleSubmit(event) {
     let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
     console.log("did this conditional work",listofWorkouts)
 
-    let workoutcontainer = []
-    for (let i = 0; i <5; i++) {
-        let randomWorkout = listofWorkouts[Math.floor(Math.random() * listofWorkouts.length)];
-        workoutcontainer.push(randomWorkout)
-    }
+    const shuffledWorkouts = listofWorkouts.sort(() => Math.random() - 0.5); 
+    const randomWorkouts = shuffledWorkouts.slice(0,5);
+    
     this.setState({
-        filteredContainer: workoutcontainer
+        filteredContainer: randomWorkouts
     })
-
-// fixduplicate randoms
-//render the exercies on the screen 
-
 }
 
-        
+renderWorkoutComponents(){
+return(
+    this.state.filteredContainer.map(workout => {
+        return (
+            <div key={workout.id} className="workoutwrapper">
+                {workout.exercise}
+            </div>
+        )
+    })
+)
+}
 
-
-// #TODO 
-// renderWorkouts this is going to be put inside of the handlesubmit method somehow
 
    render() {
        return (
@@ -132,11 +136,12 @@ handleSubmit(event) {
                         </select>
                     <button className="btn"  type="submit" value="Submit">Generate Workout</button>
                 </form>
-                <h3>For each workout perform </h3>
-                <div className="style-render">{this.state.optionMsg}</div>
-                
-                {/* Utilize this part to show the workouts based on the the chouies made by the user */}
-                
+                {/* <h4>For each workout perform</h4> */}
+                <div className="style-render">{`For Each Workout Perform ${this.state.optionMsg}`}</div>
+                <div className="workout-table">
+                {this.renderWorkoutComponents()}
+                </div>
+               
            </div>
        )
    }

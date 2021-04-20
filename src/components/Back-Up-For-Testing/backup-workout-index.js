@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ImageMapper from 'react-image-mapper';
 
-import muscleBody from "../../../static/assets/images/body-front.png";
+import muscleBody from "../../../static/assets/images/muscles-body.png";
 
 
 export default class WorkoutINdex extends Component {
@@ -32,17 +32,17 @@ export default class WorkoutINdex extends Component {
        const Map = {
            name: "my-map",
            areas: [
-               {name:"Upper Body", shape: "circle", coords: [150, 120, 20], fillColor: "red"},
-               {name:"Core", shape: "circle", coords: [172, 175, 20], fillColor: "red"},
-               {name:"Lower Body", shape: "circle", coords: [140, 290, 20], fillColor: "red"}
+               {name:"Upper Body", shape: "circle", coords: [175, 140, 20], fillColor: "red"},
+               {name:"Core", shape: "circle", coords: [205, 185, 20], fillColor: "red"},
+               {name:"Lower Body", shape: "circle", coords: [170, 350, 20], fillColor: "red"}
            ]
 
        }
 
        return (
            <div className='workout-index-wrapper'>
-               <h3>Hover Over Muscle Group To Access All Workouts</h3>
-               <ImageMapper src={muscleBody} width={350} 
+               <h3>Hover Over Muscle Group To Access All W</h3>
+               <ImageMapper src={muscleBody} width={800} 
                 map={Map}
                 />
                

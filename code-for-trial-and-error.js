@@ -33,6 +33,12 @@ for (let i = 0; i < 6; i++) {
 }   <-- the bracket may not be used since we will be working with an array of objects
 
 
+// Might use for the Workout index
+let workoutcontainer = []
+for (let i=0; i<5; i++) {
+    let randomWorkout = listofWorkouts[Math.floor(Math.random() * listofWorkouts.length)];
+    workoutcontainer.push(randomWorkout)
+}
 // to find the location on the page for image mapper
 
   document.addEventListener('mousemove', (e) =>{

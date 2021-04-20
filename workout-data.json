@@ -1,6 +1,5 @@
-// Sampple Data that im looking to receive from DB
-
-let workout = [
+// Below has been added 
+[
     {
         "equiptment": "Body Weight",
         "exercise": "Pushups",
@@ -8,23 +7,8 @@ let workout = [
     },
     {
         "equiptment": "Body Weight",
-        "exercise": "",
-        "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "SitUps",
-        "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
         "exercise": "HandStand",
         "muscle_group": "Upper Body"
-    },
-    {
-        "equiptment": "Body Weight",
-        "exercise": "Ab Crunches",
-        "muscle_group": "Lower Body"
     },
     {
         "equiptment": "Body Weight",
@@ -38,12 +22,142 @@ let workout = [
     },
     {
         "equiptment": "Body Weight",
-        "exercise": "Mountain Climbers",
-        "muscle_group": "Lower Body"
-    },
-    {
-        "equiptment": "Body Weight",
         "exercise": "Jumping Jacks",
         "muscle_group": "Lower Body"
     }
 ]
+
+// Below has been added 
+
+[
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Wall-Pushups",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Shoulder Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Chest Squeezes",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Plank Rotatations",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Tricep Dips",
+        "muscle_group": "Upper Body"
+    },
+]
+
+
+
+// Core:Body-Weight Below has been added 
+[
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Planks",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Ab Crunches",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Lying Leg Lift",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Cross Body Crunch",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Scissor Kick",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Reverse Crunch",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Windsheild Wiper",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Side Plank",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Leg Pull In",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Mountain Climbers",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Burpees",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Bear Crawl",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Crab Walk",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Crocodile Crawl",
+        "muscle_group": "Core"
+    }, 
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Sit-Ups",
+        "muscle_group": "Core"
+    },
+
+]
+
+// Core: Dumbell
+// Core: Machines
+// Core: Barbell
+
+
+// Upper-Body: Bodyweight
+[
+    {
+        "equiptment": "Body Weight",
+        "exercise": "",
+        "muscle_group": "Upper Body"
+    },
+]
+// Upper-Body: Dumbell
+// Upper-Body: Machines
+// Upper-Body: Barbell
+
+
+// Lower-Body: Bodyweight
+// Lower-Body: Dumbell
+// Lower-Body: Machines
+// Lower-Body: BaLower
