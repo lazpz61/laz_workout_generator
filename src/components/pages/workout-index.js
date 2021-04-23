@@ -30,7 +30,7 @@ export default class WorkoutIndex extends Component {
     }
 
     handleClick(event){
-        
+        // event.preventDefault();
         console.log(event)
         this.setState({ clickedMuscleGroup: event.name})
         const workouts = this.state.data
@@ -38,8 +38,11 @@ export default class WorkoutIndex extends Component {
         let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.clickedMuscleGroup);
         console.log("listofWorkouts", listofWorkouts)
         this.setState({filteredContainer: listofWorkouts})
+        
+        this.renderComponents();
 
     }
+    // Firgure why the component is lagging
 
     renderComponents(){
 
@@ -70,7 +73,7 @@ export default class WorkoutIndex extends Component {
 
         return (
             <div className='workout-index-wrapper'>
-                <h3>Hover Over Muscle Group To Access All Workouts</h3>
+                <h3>Hover Over Muscle Group and Double Click To Access All Workouts</h3>
                 <ImageMapper src={muscleBody} width={350} 
                 map={Map}
                 onClick={event => this.handleClick(event)}

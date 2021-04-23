@@ -39,6 +39,10 @@ for (let i=0; i<5; i++) {
     let randomWorkout = listofWorkouts[Math.floor(Math.random() * listofWorkouts.length)];
     workoutcontainer.push(randomWorkout)
 }
+
+
+
+
 // to find the location on the page for image mapper
 
   document.addEventListener('mousemove', (e) =>{

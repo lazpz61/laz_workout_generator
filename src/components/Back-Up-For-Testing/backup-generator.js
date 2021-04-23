@@ -45,55 +45,55 @@ handleEquiptmentChange(event) {
 
 styleRender(event) {
     if(this.state.optionStyle === "Build Strength"){
-        this.setState({optionMsg: "5 Sets of 5-8 Repitions"})
+        this.setState({optionMsg: "For Each Workout Perform 5 Sets of 5-8 Repitions"})
     }
     if(this.state.optionStyle === "Add Volume"){
-        this.setState({optionMsg: "3 Sets of 8-10 Repitions"})
+        this.setState({optionMsg: "For Each Workout Perform 3 Sets of 8-10 Repitions"})
     }
     if(this.state.optionStyle === "Increase Endurance"){
-        this.setState({optionMsg: "4 Sets to 12-15 Repitions"})
-    }   if(this.state.optionMuscle === "Please Select Muscle Group to Generate Workout"){
-        this.setState({optionMsg: "4 Sets to 12-15 Repitions"})
-    }
-    else if (this.state.optionStyle === "") {
-        this.setState({optionMsg: "Please Select a Style, Muscle group and Equiptment to Genereate Workout"})
+        this.setState({optionMsg: "For Each Workout Perform 4 Sets to 12-15 Repitions"})
     }
 }
-
+// TODO: make sure that if the user doesnt choose a style that a workout does
 handleSubmit(event) {
     event.preventDefault();
-    this.styleRender();
-    const workouts = this.state.data
-    console.log("array of objects", workouts)
+        if( this.state.optionStyle === ""){
+            this.setState({optionMsg: "Please Select a Style, Muscle group and Equiptment to Genereate A New Workout"})
+        } else {
+        this.styleRender();
+        const workouts = this.state.data
+        console.log("array of objects", workouts)
 
-    let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
-    console.log("did this conditional work",listofWorkouts)
+        let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
+        console.log("did this conditional work",listofWorkouts)
 
-    const shuffledWorkouts = listofWorkouts.sort(() => Math.random() - 0.5); 
-    const randomWorkouts = shuffledWorkouts.slice(0,5);
-    
-    this.setState({
-        filteredContainer: randomWorkouts
-    })
+        const shuffledWorkouts = listofWorkouts.sort(() => Math.random() - 0.5); 
+        const randomWorkouts = shuffledWorkouts.slice(0,5);
+        
+        this.setState({
+            filteredContainer: randomWorkouts
+        })
+
+    }
 }
 
 renderWorkoutComponents(){
-return(
-    this.state.filteredContainer.map(workout => {
-        return (
-            <div key={workout.id} className="workoutwrapper">
-                {workout.exercise}
-            </div>
+        return(
+            this.state.filteredContainer.map(workout => {
+                return (
+                    <div key={workout.id} className="workoutwrapper">
+                        {workout.exercise}
+                    </div>
+                )
+            })
         )
-    })
-)
 }
 
 
    render() {
        return (
            <div className='generator-wrapper'>
-               <h1>This will be where the workout generator will be placed</h1>
+               <h1>Please Make Your Selections Below to Start Generating Workout</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="style">Style</label>
                         
@@ -136,8 +136,7 @@ return(
                         </select>
                     <button className="btn"  type="submit" value="Submit">Generate Workout</button>
                 </form>
-                {/* <h4>For each workout perform</h4> */}
-                <div className="style-render">{`For Each Workout Perform ${this.state.optionMsg}`}</div>
+                <div className="style-render">{this.state.optionMsg}</div>
                 <div className="workout-table">
                 {this.renderWorkoutComponents()}
                 </div>
