@@ -24,7 +24,7 @@ function header(props) {
            </div>
             {Cookies.get("username")
                 
-            ?   <div className="right-column portal-generator">
+            ?   <div className="right-column portal-logout">
                     <Link to="/generator">Workout Generator</Link>
                     <Link to="/workout-index">Workout Index</Link>
                     <span onClick={handleLogout}>Log Out</span>
