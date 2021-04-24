@@ -1,9 +1,69 @@
 .signup-wrapper {
-    width: auto;
-    height: auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     background: radial-gradient(#00DB2A,#146414);
     height: 100vh;
 }
+
+.signup-form-wrapper { 
+    display: grid;
+    width: 250px;
+    margin: auto;
+
+    .signup-header {
+        font-size: 2rem;
+        color: #DEFFFC;
+    }
+    
+    input {
+        width: 270px;
+        border-radius: 4px;
+        margin: 5px 0;
+        height: 20px;
+    }
+
+
+}
+
+
+  // border-radius: 5px;
+    // padding: 20px;
+
+
+
+
+
+
+
+
+
+// .signup-wrapper {
+//     
+    // display: flex;
+    // flex-direction: column;
+    // background: radial-gradient(#00DB2A,#146414);
+    // height: 100vh;
+    // border-radius: 5px;
+    // background-color: #f2f2f2;
+    // padding: 20px;
+
+//     .signup-header {
+//         align-items: ceneter;
+//         margin: auto;
+//     }
+
+//     form {
+//         display: block;
+//         border-radius: 20px;
+//         box-shadow: 0px 20px 20px;
+//         margin: auto;
+//     }
+// }
+
+// Facebook Sign in page
+
+// border-radius: 8px;
+// box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+// margin: auto;
+// padding: 0 0 14px 0;
+// width: 396px;

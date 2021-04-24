@@ -1,9 +1,25 @@
 .login-wrapper {
-    width: auto;
-    height: auto;
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: auto;
     background: radial-gradient(#00DB2A,#146414);
     height: 100vh;
+}
+
+.login-form-wrapper {
+    display: grid;
+    width: 250px;
+    margin: auto;
+
+    .login-header {
+        font-size: 2rem;
+        color: #DEFFFC;
+    }
+
+    input {
+        width: 270px;
+        border-radius: 4px;
+        margin: 5px 0;
+        height: 20px;
+    }
+    
 }

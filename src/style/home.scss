@@ -1,11 +1,11 @@
 .home-wrapper {
     width: auto;
-    height: auto;
     display: grid;
     justify-content: center;
     grid-template-columns: auto;
     background: radial-gradient(#00DB2A,#146414);
     height: 100vh;
+    margin: auto;
 
     .home-msg {
         display: flex;

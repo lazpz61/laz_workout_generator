@@ -72,32 +72,40 @@ export default class Signup extends Component {
    render() {
        return (
            <div className='signup-wrapper'>
-               <div className="signup-header">Sign Up Free to start generating workouts</div>
-               <form onSubmit={this.handleSubmit}>
-                   <input
-                   type="text"
-                   value={this.state.username}
-                   placeholder="Username"
-                   name="username"
-                   onChange={this.handleChange}
-                   />
-                   <input
-                   type="password"
-                   value={this.state.password}
-                   placeholder="Password"
-                   name="password"
-                   onChange={this.handleChange}
-                   />
-                   <input
-                   type="password"
-                   value={this.state.confirmPassword}
-                   placeholder="Confirm Password"
-                   name="confirmPassword"
-                   onChange={this.handleChange}
-                   />
-                   <button type="submit">Start Generating</button>
-               </form>
+
+               <div className="signup-form-wrapper">
+
+                <div className="signup-header">Sign Up Free To Start Generating Workouts</div>
+
+                    <form onSubmit={this.handleSubmit}>
+                        <input
+                        type="text"
+                        value={this.state.username}
+                        placeholder="Username"
+                        name="username"
+                        onChange={this.handleChange}
+                        />
+                        <input
+                        type="password"
+                        value={this.state.password}
+                        placeholder="Password"
+                        name="password"
+                        onChange={this.handleChange}
+                        />
+                        <input
+                        type="password"
+                        value={this.state.confirmPassword}
+                        placeholder="Confirm Password"
+                        name="confirmPassword"
+                        onChange={this.handleChange}
+                        />
+                        <button type="submit">Start Generating</button>
+                    </form>
+                    
+                </div>
+
                <p style={{visibility: this.state.error ? "visible" : "hidden"}}>{this.state.errorText}</p>
+               
            </div>
        )
    }

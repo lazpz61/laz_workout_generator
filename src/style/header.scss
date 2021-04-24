@@ -6,7 +6,7 @@
    
 
     .left-column, .right-column {
-        margin: 10px 20px;
+        margin: 10px 10px;
         
     }
 
@@ -18,11 +18,9 @@
 
         .right-column {
             display: flex;
-            justify-content: space-between;
-            
+            justify-content: flex-end;
             align-items: center;
-            margin-left: 50px;
-
+    
             a, span{
                 border: solid;
                 border-radius: 5px;

@@ -64,24 +64,30 @@ export default class Login extends Component {
    render() {
        return (
            <div className='login-wrapper'>
-               <div className="login-header">Please Login to start generating workouts</div>
-               <form onSubmit={this.handleSubmit}>
-                   <input
-                   type="text"
-                   placeholder="Username"
-                   value={this.state.username}
-                   name="username"
-                   onChange={this.handleChange}
-                   />
-                   <input
-                   type="password"
-                   placeholder="Password"
-                   value={this.state.password}
-                   name="password"
-                   onChange={this.handleChange}
-                   />
-                   <button type="submit">Login</button>
-               </form>
+
+               <div className="login-form-wrapper">
+
+                    <div className="login-header">Please Login To Start Generating Workouts</div>
+
+                        <form onSubmit={this.handleSubmit}>
+                            <input
+                            type="text"
+                            placeholder="Username"
+                            value={this.state.username}
+                            name="username"
+                            onChange={this.handleChange}
+                            />
+                            <input
+                            type="password"
+                            placeholder="Password"
+                            value={this.state.password}
+                            name="password"
+                            onChange={this.handleChange}
+                            />
+                            <button type="submit">Login</button>
+                        </form>
+               </div>
+
                <div className="login-msg" style={{visibility: this.state.error ? "visible" : "hidden"}}>{this.state.errorText}</div>
            </div>
        )
