@@ -1,16 +1,17 @@
 .workout-index-wrapper {
-    width: auto;
-    height: auto;
     display: grid;
     justify-content: center;
-    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr auto;
     background: #B287A3;
-    height: 100vh;
+    height: 1000px;
+    align-items: center;
 
-    h3 {
+
+    h1 {
         display: flex;
         justify-content: center;
-        font-size: 15px;
+
+        // font-size: 15px;
     }
 
     img {
@@ -18,5 +19,7 @@
         height: auto;
         align-items: center;
     }
+
+    
 }
 

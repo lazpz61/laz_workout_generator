@@ -139,25 +139,568 @@
 
 ]
 
-// Core: Dumbell
-// Core: Machines
-// Core: Barbell
 
 
-// Upper-Body: Bodyweight
+
+// The below need to be added
+
+
+// Core: Dumbell - Added
+
+[
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Russian Twists",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell WoodChopper",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Windmill",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Crunch",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Side Bend",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Curl Up With Transfer",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Target Crunch Up",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Swing",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Fly With Leg Flowers",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Situp",
+        "muscle_group": "Core"
+    }
+
+]
+
+
+// Core: Machines - Workouts Added
+[
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Crunch Standing",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Crunch Kneeling",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable WoodChopper",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Reach Overhead",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Side Bend",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Russian Twists",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Low Cable Crunch",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Reverse Cable Crunch",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Ab Coaster",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Lo-Hi Chop",
+        "muscle_group": "Core"
+    }
+]
+
+
+// Core: Barbell - Workouts Added
+[
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Rollout",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Crunch",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Side Bend",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Situp",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Deadlift",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Landmine Rainbow",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Straight-Leg Situp",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Zercher Squat",
+        "muscle_group": "Core"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Overhead Carry",
+        "muscle_group": "Core"
+    }
+
+
+]
+
+
+// Upper-Body: Bodyweight - Workouts Added
 [
     {
         "equiptment": "Body Weight",
-        "exercise": "",
+        "exercise": "Tricep Pushup",
         "muscle_group": "Upper Body"
     },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Plank To Pushup",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Plyometric Pushup",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Spider Plank Pushup",
+        "muscle_group": "Upper Body"
+    }
 ]
-// Upper-Body: Dumbell
-// Upper-Body: Machines
-// Upper-Body: Barbell
+
+// Upper-Body: Dumbell Workouts Added
+[
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Flys",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Chest Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Curls",
+        "muscle_group": "Upper Body"
+    },
+    
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Floor Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Narrow Chest Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Incline Dumbell Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Tricep Extensions",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Skull Crushers",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Sitting Military Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Side Lateral Raises",
+        "muscle_group": "Upper Body"
+    }
 
 
-// Lower-Body: Bodyweight
-// Lower-Body: Dumbell
-// Lower-Body: Machines
-// Lower-Body: BaLower
+]
+
+
+// Upper-Body: Machines - Workouts Added
+
+[
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Flys",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cables Tricep Extensions",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Bicep Curls",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Shoulder Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Plate Loaded Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Bicep Kickbacks",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment":"Machines",
+        "exercise": "Cable Crossover",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Raise",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Sword Draw",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Standing Cable Row",
+        "muscle_group": "Upper Body"
+    }
+
+
+]
+// Upper-Body: Barbell - workouts added
+[
+    {
+        "equiptment": "Barbell",
+        "exercise": "Bench Presse",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Dead Lift",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Standing Military Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Arm Curl",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Incline Bench Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Decline Bench Press",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Shoulder Shrugs",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Rack Pull",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Straight Arm Raise",
+        "muscle_group": "Upper Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Upright Barbell Row",
+        "muscle_group": "Upper Body"
+    }
+]
+
+
+// Lower-Body: Bodyweight Workouts Added
+
+[
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Lounges",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Bridges",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Glute Kickback",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Iron Chair Wall Sits",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Squat Jumps",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Fire Hydrant",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Body Weight",
+        "exercise": "Frog Pulses",
+        "muscle_group": "Lower Body"
+    }
+]
+// Lower-Body: Dumbell - workouts added
+
+[
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Glute Bridges",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Walking Lounges",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Jump Squats",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Goblet Squats",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Donkey Kicks",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Sumo Squats",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Deadlift",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Squats",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Hip Adbuction",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Dumbell",
+        "exercise": "Dumbell Iron Cross",
+        "muscle_group": "Lower Body"
+    }
+
+
+
+]
+// Lower-Body: Machines - Workouts Added
+[
+    {
+        "equiptment": "Machines",
+        "exercise": "Leg Press",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Leg Extension",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Hack Squat",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Squat",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Adduction",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Abduction",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Hip Extension",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Plated Calf Raises",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Glute Kickback",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Machines",
+        "exercise": "Cable Step Up",
+        "muscle_group": "Lower Body"
+    }
+]
+// Lower-Body: Barbell - workouts added
+[
+    {
+        "equiptment": "Barbell",
+        "exercise": "Back Squat",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Front Squat",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Lunge",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Good Mornings",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Romanian Dealift",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Back Calf Raises",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Thrust",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Clean And Jerk",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Pull",
+        "muscle_group": "Lower Body"
+    },
+    {
+        "equiptment": "Barbell",
+        "exercise": "Barbell Clean",
+        "muscle_group": "Lower Body"
+    }
+]

@@ -54,7 +54,7 @@ styleRender(event) {
         this.setState({optionMsg: "For Each Workout Perform 4 Sets to 12-15 Repitions"})
     }
 }
-// TODO: make sure that if the user doesnt choose a style that a workout does
+
 handleSubmit(event) {
     event.preventDefault();
         if( this.state.optionStyle === ""){
@@ -81,7 +81,8 @@ renderWorkoutComponents(){
         return(
             this.state.filteredContainer.map(workout => {
                 return (
-                    <div key={workout.id} className="workoutwrapper">
+                    
+                    <div key={workout.id} className="workout-table">
                         {workout.exercise}
                     </div>
                 )
@@ -136,9 +137,13 @@ renderWorkoutComponents(){
                         </select>
                     <button className="btn"  type="submit" value="Submit">Generate Workout</button>
                 </form>
+
                 <div className="style-render">{this.state.optionMsg}</div>
-                <div className="workout-table">
-                {this.renderWorkoutComponents()}
+
+                <div className="workout-wrapper">
+
+                    {this.renderWorkoutComponents()}
+                
                 </div>
                
            </div>

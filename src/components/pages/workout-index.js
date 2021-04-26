@@ -49,9 +49,10 @@ export default class WorkoutIndex extends Component {
         return (
             this.state.filteredContainer.map(workout => {
                 return (
-                    <div key={workout.id} className="workout-index">
-                        {workout.exercise}
-                    </div>
+                    <tr key={workout.id} className="workout-index">
+                        <td>{workout.exercise}</td>
+                        <td>{workout.equiptment}</td>
+                    </tr>
         )
         }))
     }
@@ -73,12 +74,20 @@ export default class WorkoutIndex extends Component {
 
         return (
             <div className='workout-index-wrapper'>
-                <h3>Hover Over Muscle Group and Double Click To Access All Workouts</h3>
+                <h1>Hover Over Muscle Group and Double Click To Access All Workouts</h1>
+
                 <ImageMapper src={muscleBody} width={350} 
                 map={Map}
                 onClick={event => this.handleClick(event)}
                 />
-                {this.renderComponents()}
+                Workout and Equiptment
+                <table id="workout-index-table">
+                    <tbody>
+                        {this.renderComponents()}
+                    </tbody>
+                    
+                </table>
+                
                 
             </div>
         )

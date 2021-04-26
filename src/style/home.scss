@@ -10,12 +10,27 @@
     .home-msg {
         display: flex;
         justify-content: center;
-        font-size: 1.10rem;
+        align-items: center;
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 0 5px;
+        color: #DEFFFC;
     }
 
      .header-home{
         display: flex;
         justify-content: center;
+        align-items: center;
+        color: #DEFFFC;
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0 5px;
+    }
+
+    .generator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -25,4 +40,4 @@
 // #4B3B40 Old Burgandy and #B287A3 Opera Mauve 
 
 // Home pages and Header and Footer
-// # DEFFFC Light Cyan and #379392 Virdian Green 
+// #DEFFFC Light Cyan and #379392 Virdian Green 

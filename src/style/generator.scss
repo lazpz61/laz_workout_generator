@@ -1,10 +1,10 @@
 .generator-wrapper {
     width: auto;
-    height: auto;
     display: grid;
     justify-content: center;
-    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto;
     height: 100vh;
+    position: relative;
     
 }
 
@@ -14,5 +14,43 @@
     background-position:center;
     background-color: #B287A3;
     background-size: 300px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 275px;
+        position: sticky   
+    }
+
+    .style-render{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        color: #DEFFFC;
+    }
+    .workout-wrapper{
+        display:flex;
+        justify-content: center;
+        margin: 20px auto;
+        vertical-align: middle;
+        align-items: center;
+        text-align: center;
+        flex-wrap:wrap;
+
+        
+
+        .workout-table{
+            border: 2px solid #DEFFFC;
+            margin-bottom: 50px;
+            color: green;
+            font-weight: 900;
+        }
+    }
+
     
 }
+

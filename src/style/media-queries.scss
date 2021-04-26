@@ -1,7 +1,24 @@
 @media (max-width: 615px) {
+    .header-wrapper .portal-logout a, #span{
+        font-size: 10px;
+    }
      .home-wrapper > .generator img {
         width: 315px;
     }
+
+    .home-wrapper > .header-home {
+        font-size: 25px;
+
+    }
+    .home-wrapper > .home-msg {
+        font-size: 15px;
+        margin: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        align-items: center;
+    }
+
+
 }
 
 

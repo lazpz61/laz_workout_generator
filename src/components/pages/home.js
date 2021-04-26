@@ -6,7 +6,7 @@ import globe from "../../../static/assets/images/globe-biceps.png";
 export default function homepage() {
    return (
        <div className='home-wrapper'>
-            <h1 className="header-home">Laz's Workout Generator</h1> 
+            <div className="header-home">Laz's Workout Generator</div> 
                 <div className="home-msg">Click Below For Free Workout Generator</div>
                     <Link className="generator" to="/generator">
                         <img src={globe} alt=""/>

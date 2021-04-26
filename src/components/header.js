@@ -27,7 +27,7 @@ function header(props) {
             ?   <div className="right-column portal-logout">
                     <Link to="/generator">Workout Generator</Link>
                     <Link to="/workout-index">Workout Index</Link>
-                    <span onClick={handleLogout}>Log Out</span>
+                    <span id="span" onClick={handleLogout}>Log Out</span>
                 </div>
                         
             : 
