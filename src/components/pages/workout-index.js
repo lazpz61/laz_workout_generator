@@ -30,7 +30,7 @@ export default class WorkoutIndex extends Component {
     }
 
     handleClick(event){
-        // event.preventDefault();
+
         console.log(event)
         this.setState({ clickedMuscleGroup: event.name})
         const workouts = this.state.data
@@ -42,7 +42,7 @@ export default class WorkoutIndex extends Component {
         this.renderComponents();
 
     }
-    // Firgure why the component is lagging
+
 
     renderComponents(){
 
