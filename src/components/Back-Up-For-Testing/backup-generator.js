@@ -53,13 +53,21 @@ styleRender(event) {
     if(this.state.optionStyle === "Increase Endurance"){
         this.setState({optionMsg: "For Each Workout Perform 4 Sets to 12-15 Repitions"})
     }
+    if(this.state.optionStyle && !this.state.optionMuscle || !this.state.optionEquiptment){
+        this.setState({optionMsg: "Please Select a Style, Muscle rou and Equiptment to Generate A New Workout"})
+    }
+    
 }
-// TODO: make sure that if the user doesnt choose a style that a workout does
+
 handleSubmit(event) {
     event.preventDefault();
-        if( this.state.optionStyle === ""){
-            this.setState({optionMsg: "Please Select a Style, Muscle group and Equiptment to Genereate A New Workout"})
-        } else {
+        if( this.state.optionStyle){
+            this.setState({optionMsg: "Please Select a Style, Muscle Grou and Equiptment to Generate A New Workout"})
+        } 
+        if(this.state.optionStyle === "" && this.state.optionMuscle && this.state.optionEquiptment){
+            this.setState({optionMsg: "Please Select a Style, Muscle group and Equiptment to Generate A New Workout"})
+        }
+        else {
         this.styleRender();
         const workouts = this.state.data
         console.log("array of objects", workouts)
@@ -135,8 +143,9 @@ renderWorkoutComponents(){
                             <option value="Machines">Machines</option>
                             <option value="Barbell">Barbell</option>
                         </select>
-                    <button className="btn"  type="submit" value="Submit">Generate Workout</button>
+                        <button className="btn"  type="submit" value="Submit">Generate Workout</button>
                 </form>
+                
 
                 <div className="style-render">{this.state.optionMsg}</div>
 

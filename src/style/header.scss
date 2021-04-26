@@ -26,13 +26,13 @@
                 border-radius: 5px;
                 background-color: white;
                 font-size: 2rem;
-                margin: 5px
+                margin: 5px;
+                text-align: center;
             }
             a:active, span:active {
                 box-shadow: 5px 5px grey ;
                 border-radius: 5px;
                 cursor: default;
-
             }
             span:hover {
                 cursor: pointer;

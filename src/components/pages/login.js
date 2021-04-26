@@ -86,9 +86,10 @@ export default class Login extends Component {
                             />
                             <button type="submit">Login</button>
                         </form>
+                        <div className="login-msg" style={{visibility: this.state.error ? "visible" : "hidden"}}>{this.state.errorText}</div>
                </div>
 
-               <div className="login-msg" style={{visibility: this.state.error ? "visible" : "hidden"}}>{this.state.errorText}</div>
+               
            </div>
        )
    }

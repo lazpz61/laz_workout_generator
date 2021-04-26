@@ -101,10 +101,10 @@ export default class Signup extends Component {
                         />
                         <button type="submit">Start Generating</button>
                     </form>
-                    
+                    <div className="signup-msg" style={{visibility: this.state.error ? "visible" : "hidden"}}>{this.state.errorText}</div>
                 </div>
 
-               <p style={{visibility: this.state.error ? "visible" : "hidden"}}>{this.state.errorText}</p>
+               
                
            </div>
        )

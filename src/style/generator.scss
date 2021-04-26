@@ -1,8 +1,8 @@
 .generator-wrapper {
     width: auto;
     display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    justify-items: center;
+    grid-template-rows: 80px 1fr 1fr 1fr auto;
     height: 100vh;
     position: relative;
     
@@ -14,12 +14,14 @@
     background-position:center;
     background-color: #B287A3;
     background-size: 300px;
+    
 
     form {
         display: flex;
         flex-direction: column;
         width: 275px;
-        position: sticky   
+        // position: sticky; 
+
     }
 
     .style-render{
@@ -31,6 +33,7 @@
         flex-wrap: wrap;
         font-size: 1.5rem;
         color: #DEFFFC;
+        text-align: center;
     }
     .workout-wrapper{
         display:flex;
@@ -50,7 +53,9 @@
             font-weight: 900;
         }
     }
-
+    h1 {
+        text-align: center;
+    }
     
 }
 

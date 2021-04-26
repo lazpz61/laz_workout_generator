@@ -1,25 +1,44 @@
 .login-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background: radial-gradient(#00DB2A,#146414);
     height: 100vh;
+
+    .login-msg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: red;
+        font-weight: bold;
+        padding: 10px;
+        
+        
+    }
 }
 
 .login-form-wrapper {
     display: grid;
     width: 250px;
     margin: auto;
+    
 
     .login-header {
+        display:flex;
+        text-align: center;
         font-size: 2rem;
         color: #DEFFFC;
     }
 
     input {
-        width: 270px;
+        width: 230px;
         border-radius: 4px;
         margin: 5px 0;
         height: 20px;
     }
-    
+
+    button {
+        width: 100%;
+    }
+  
 }

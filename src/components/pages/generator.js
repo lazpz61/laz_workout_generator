@@ -53,13 +53,40 @@ styleRender(event) {
     if(this.state.optionStyle === "Increase Endurance"){
         this.setState({optionMsg: "For Each Workout Perform 4 Sets to 12-15 Repitions"})
     }
+    if(this.state.optionStyle && !this.state.optionMuscle && !this.state.optionEquiptment){
+        this.setState({optionMsg: "1Please Select a Muscle Group and Equiptment to Generate A New Workout"})
+    }
+    if(this.state.optionStyle && !this.state.optionMuscle && this.state.optionEquiptment){
+        this.setState({optionMsg: "1.5Please Select a Muscle Group to Generate A New Workout"})
+    }
+    if(!this.state.optionStyle && !this.state.optionMuscle && !this.state.optionEquiptment){
+        this.setState({optionMsg: "2Please Select a Style, Muscle Group, and Equiptment to Generate A New Workout"})
+    }
+    if(!this.state.optionStyle && !this.state.optionMuscle && this.state.optionEquiptment){
+        this.setState({optionMsg: "2.5Please Select a Style and Muscle Group to Generate A New Workout"})
+    }
+    if(this.state.optionStyle && this.state.optionMuscle && !this.state.optionEquiptment){
+        this.setState({optionMsg: "3Please Select an Equiptment to Generate A New Workout"})
+    }
+    if(!this.state.optionStyle && this.state.optionMuscle && !this.state.optionEquiptment){
+        this.setState({optionMsg: "3.5Please Select a Style and Equiptment to Generate A New Workout"})
+    }
+
+
+
+    
 }
 
 handleSubmit(event) {
     event.preventDefault();
-        if( this.state.optionStyle === ""){
-            this.setState({optionMsg: "Please Select a Style, Muscle group and Equiptment to Genereate A New Workout"})
-        } else {
+        // if( this.state.optionStyle){
+        //     this.setState({optionMsg: "Please Select a Style, Muscle 2 and Equiptment to Generate A New Workout"})
+        // } 
+        if(this.state.optionStyle === "" && this.state.optionMuscle && this.state.optionEquiptment){
+            this.setState({optionMsg: "4Please Select a Style to Generate A New Workout",
+        filteredContainer: []})
+        }
+        else {
         this.styleRender();
         const workouts = this.state.data
         console.log("array of objects", workouts)
@@ -135,8 +162,9 @@ renderWorkoutComponents(){
                             <option value="Machines">Machines</option>
                             <option value="Barbell">Barbell</option>
                         </select>
-                    <button className="btn"  type="submit" value="Submit">Generate Workout</button>
+                        <button className="btn"  type="submit" value="Submit">Generate Workout</button>
                 </form>
+                
 
                 <div className="style-render">{this.state.optionMsg}</div>
 

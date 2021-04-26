@@ -18,6 +18,14 @@
         align-items: center;
     }
 
+    .generator-wrapper {
+        grid-template-rows: 1fr 1fr 1fr 40% auto;
+        height: auto;
+    }
+
+
+
+
 }
 
 
