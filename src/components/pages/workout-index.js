@@ -61,13 +61,13 @@ export default class WorkoutIndex extends Component {
         const Map = {
             name: "my-map",
             areas: [
-                {name:"Upper Body", shape: "circle", coords: [150, 120, 20], fillColor: "#379392"},
-                {name:"Upper Body", shape: "circle", coords: [110, 140, 10], fillColor: "#379392"},
-                {name:"Upper Body", shape: "circle", coords: [195, 120, 20], fillColor: "#379392"},
-                {name:"Upper Body", shape: "circle", coords: [235, 140, 10], fillColor: "#379392"},
-                {name:"Core", shape: "rect", coords: [140, 140, 200,210], fillColor: "#379392"},
-                {name:"Lower Body", shape: "circle", coords: [140, 290, 20], fillColor: "#379392"},
-                {name:"Lower Body", shape: "circle", coords: [200, 290, 20], fillColor: "#379392"}
+                {name:"Upper Body", shape: "circle", coords: [135, 110, 20], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [100, 135, 10], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [179, 110, 20], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [215, 135, 10], fillColor: "#379392"},
+                {name:"Core", shape: "rect", coords: [125, 130, 190,200], fillColor: "#379392"},
+                {name:"Lower Body", shape: "circle", coords: [130, 270, 20], fillColor: "#379392"},
+                {name:"Lower Body", shape: "circle", coords: [190, 270, 20], fillColor: "#379392"}
             ]
 
         }
@@ -75,12 +75,13 @@ export default class WorkoutIndex extends Component {
         return (
             <div className='workout-index-wrapper'>
                 <h1>Hover Over Muscle Group and Double Click To Access All Workouts</h1>
-
-                <ImageMapper src={muscleBody} width={350} 
-                map={Map}
-                onClick={event => this.handleClick(event)}
-                />
-                Workout and Equiptment
+                <div className="img-wrapper">
+                    <ImageMapper src={muscleBody} width={320}
+                    map={Map}
+                    onClick={event => this.handleClick(event)}
+                    />
+                </div>
+                <h3> ---Workout and Equiptment---  </h3>
                 <table id="workout-index-table">
                     <tbody>
                         {this.renderComponents()}

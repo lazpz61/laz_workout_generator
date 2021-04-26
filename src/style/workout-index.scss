@@ -1,25 +1,38 @@
 .workout-index-wrapper {
     display: grid;
     justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-rows: auto;
     background: #B287A3;
-    height: 1000px;
+    height:  auto;
     align-items: center;
+    margin: auto;
 
 
-    h1 {
+    h1, h3{
         display: flex;
         justify-content: center;
+        margin: 0px 10px;
 
         // font-size: 15px;
     }
 
-    img {
-        width: 100%;
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
         height: auto;
         align-items: center;
+        
     }
 
-    
+    .workout-index {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        margin: 0px 10px;
+        margin-bottom: 5px;
+    }
+
+
+
 }
 
