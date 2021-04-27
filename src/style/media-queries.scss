@@ -2,6 +2,25 @@
     .header-wrapper .portal-logout a, #span{
         font-size: 10px;
     }
+
+    .header-wrapper > .right-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        text-align: center;
+    }
+
+    .header-wrapper > .portal-logout {
+        display:flex;
+        flex-direction: row;
+        justify-items: flex-end;
+
+
+    }
+
+    .header-wrapper > .right-column a{
+        font-size: 10px;
+    }
+
      .home-wrapper > .generator img {
         width: 315px;
     }
@@ -21,6 +40,15 @@
     .generator-wrapper {
         grid-template-rows: 1fr 1fr 1fr 40% auto;
         height: auto;
+
+        h1 {
+            font-size: 1rem;
+        }
+
+    }
+
+    .workout-index-wrapper h1 {
+        font-size: 1rem;
     }
 
 

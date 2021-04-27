@@ -42,4 +42,4 @@ function header(props) {
    )
 }
 
-export default withRouter(header); // This allows the header to mount once routed to the homepage after login
+export default withRouter(header); 

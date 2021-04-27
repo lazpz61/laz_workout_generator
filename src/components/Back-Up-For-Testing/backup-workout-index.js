@@ -30,19 +30,17 @@ export default class WorkoutIndex extends Component {
     }
 
     handleClick(event){
-        // event.preventDefault();
         console.log(event)
-        this.setState({ clickedMuscleGroup: event.name})
         const workouts = this.state.data
         console.log("array of objects", workouts)
-        let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.clickedMuscleGroup);
+        let listofWorkouts = workouts.filter(workout => workout.muscle_group === event.name);
+        this.setState({filteredContainer: listofWorkouts,
+            clickedMuscleGroup: event.name
+        })
         console.log("listofWorkouts", listofWorkouts)
-        this.setState({filteredContainer: listofWorkouts})
-        
-        this.renderComponents();
-
+    
     }
-    // Firgure why the component is lagging
+
 
     renderComponents(){
 
@@ -81,7 +79,7 @@ export default class WorkoutIndex extends Component {
                     onClick={event => this.handleClick(event)}
                     />
                 </div>
-                {/* Workout and Equiptment */}
+                <h3> ---Workout and Equiptment---  </h3>
                 <table id="workout-index-table">
                     <tbody>
                         {this.renderComponents()}
