@@ -1,6 +1,7 @@
 @media (max-width: 615px) {
     .header-wrapper .portal-logout a, #span{
         font-size: 10px;
+        padding: 5px 16px;
     }
 
     .header-wrapper > .right-column {
@@ -19,6 +20,7 @@
 
     .header-wrapper > .right-column a{
         font-size: 10px;
+        padding: 5px 7px;
     }
 
      .home-wrapper > .generator img {
@@ -55,6 +57,14 @@
 
 
 }
+
+@media (min-width: 1000px){
+    .workout-index-wrapper {
+        grid-template-rows: 1fr 1fr auto ;
+    }
+}
+
+
 
 
 
