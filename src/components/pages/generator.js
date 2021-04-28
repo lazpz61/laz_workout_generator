@@ -86,10 +86,8 @@ handleSubmit(event) {
         else {
         this.styleRender();
         const workouts = this.state.data
-        console.log("array of objects", workouts)
 
         let listofWorkouts = workouts.filter(workout => workout.muscle_group === this.state.optionMuscle && workout.equiptment === this.state.optionEquiptment);
-        console.log("did this conditional work",listofWorkouts)
 
         const shuffledWorkouts = listofWorkouts.sort(() => Math.random() - 0.5); 
         const randomWorkouts = shuffledWorkouts.slice(0,5);
