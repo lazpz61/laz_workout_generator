@@ -21,6 +21,10 @@
         height: auto;
         align-items: center;
         
+        .img-map:active {
+            box-shadow: 5px 5px 5px red;
+        }
+        
     }
 
     .workout-index {
@@ -30,6 +34,8 @@
         margin: 0px 10px;
         margin-bottom: 5px;
     }
+
+ 
 
 
 

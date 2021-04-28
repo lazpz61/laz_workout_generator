@@ -118,7 +118,7 @@ renderWorkoutComponents(){
    render() {
        return (
            <div className='generator-wrapper'>
-               <h1>Please Make Your Selections Below to Start Generating Workout</h1>
+               <h1>Please Make Selections to Start Generating Workout</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="style">Style</label>
                         

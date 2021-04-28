@@ -59,21 +59,23 @@ export default class WorkoutIndex extends Component {
             name: "my-map",
             areas: [
                 {name:"Upper Body", shape: "circle", coords: [135, 110, 20], fillColor: "#379392"},
-                {name:"Upper Body", shape: "circle", coords: [100, 135, 10], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [100, 135, 15], fillColor: "#379392"},
                 {name:"Upper Body", shape: "circle", coords: [179, 110, 20], fillColor: "#379392"},
-                {name:"Upper Body", shape: "circle", coords: [215, 135, 10], fillColor: "#379392"},
+                {name:"Upper Body", shape: "circle", coords: [215, 135, 15], fillColor: "#379392"},
                 {name:"Core", shape: "rect", coords: [125, 130, 190,200], fillColor: "#379392"},
                 {name:"Lower Body", shape: "circle", coords: [130, 270, 20], fillColor: "#379392"},
-                {name:"Lower Body", shape: "circle", coords: [190, 270, 20], fillColor: "#379392"}
+                {name:"Lower Body", shape: "circle", coords: [130, 360, 15], fillColor: "#379392"},
+                {name:"Lower Body", shape: "circle", coords: [190, 270, 20], fillColor: "#379392"},
+                {name:"Lower Body", shape: "circle", coords: [190, 360, 15], fillColor: "#379392"},
             ]
 
         }
 
         return (
             <div className='workout-index-wrapper'>
-                <h1>Hover Over Muscle Group and Double Click To Access All Workouts</h1>
+                <h1>Hover & Click To Access Workout Index Below</h1>
                 <div className="img-wrapper">
-                    <ImageMapper src={muscleBody} width={320}
+                    <ImageMapper src={muscleBody} width={320} className="img-map"
                     map={Map}
                     onClick={event => this.handleClick(event)}
                     />
