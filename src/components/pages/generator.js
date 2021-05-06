@@ -45,13 +45,13 @@ handleEquiptmentChange(event) {
 
 styleRender(event) {
     if(this.state.optionStyle === "Build Strength"){
-        this.setState({optionMsg: "For Each Workout Perform 5 Sets of 5-8 Repitions"})
+        this.setState({optionMsg: "For Each Workout Perform 5 Sets of 5-8 Repetitions"})
     }
     if(this.state.optionStyle === "Add Volume"){
-        this.setState({optionMsg: "For Each Workout Perform 3 Sets of 8-10 Repitions"})
+        this.setState({optionMsg: "For Each Workout Perform 3 Sets of 8-10 Repetitions"})
     }
     if(this.state.optionStyle === "Increase Endurance"){
-        this.setState({optionMsg: "For Each Workout Perform 4 Sets to 12-15 Repitions"})
+        this.setState({optionMsg: "For Each Workout Perform 4 Sets of 12-15 Repetitions"})
     }
     if(this.state.optionStyle && !this.state.optionMuscle && !this.state.optionEquiptment){
         this.setState({optionMsg: "Please Select a Muscle Group and Equipment to Generate A New Workout"})
