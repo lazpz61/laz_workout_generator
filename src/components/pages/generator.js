@@ -54,22 +54,22 @@ styleRender(event) {
         this.setState({optionMsg: "For Each Workout Perform 4 Sets to 12-15 Repitions"})
     }
     if(this.state.optionStyle && !this.state.optionMuscle && !this.state.optionEquiptment){
-        this.setState({optionMsg: "Please Select a Muscle Group and Equiptment to Generate A New Workout"})
+        this.setState({optionMsg: "Please Select a Muscle Group and Equipment to Generate A New Workout"})
     }
     if(this.state.optionStyle && !this.state.optionMuscle && this.state.optionEquiptment){
         this.setState({optionMsg: "Please Select a Muscle Group to Generate A New Workout"})
     }
     if(!this.state.optionStyle && !this.state.optionMuscle && !this.state.optionEquiptment){
-        this.setState({optionMsg: "Please Select a Style, Muscle Group, and Equiptment to Generate A New Workout"})
+        this.setState({optionMsg: "Please Select a Style, Muscle Group, and Equipment to Generate A New Workout"})
     }
     if(!this.state.optionStyle && !this.state.optionMuscle && this.state.optionEquiptment){
         this.setState({optionMsg: "Please Select a Style and Muscle Group to Generate A New Workout"})
     }
     if(this.state.optionStyle && this.state.optionMuscle && !this.state.optionEquiptment){
-        this.setState({optionMsg: "Please Select an Equiptment to Generate A New Workout"})
+        this.setState({optionMsg: "Please Select an Equipment to Generate A New Workout"})
     }
     if(!this.state.optionStyle && this.state.optionMuscle && !this.state.optionEquiptment){
-        this.setState({optionMsg: "Please Select a Style and Equiptment to Generate A New Workout"})
+        this.setState({optionMsg: "Please Select a Style and Equipment to Generate A New Workout"})
     }
 
 
@@ -144,14 +144,14 @@ renderWorkoutComponents(){
                             <option value="Lower Body">Lower Body</option>
                         </select>
                 
-                    <label htmlFor="equiptment">Equiptment</label>
+                    <label htmlFor="equiptment">Equipment</label>
                     
                         <select
                         name="equiptment"
                         value={this.state.optionEquiptment}
                         onChange={this.handleEquiptmentChange}
                         >
-                            <option value="">{`Select Equiptment`}</option>
+                            <option value="">{`Select Equipment`}</option>
                             <option value="Body Weight">Body Weight</option>
                             <option value="Dumbell">Dumbell</option>
                             <option value="Machines">Machines</option>

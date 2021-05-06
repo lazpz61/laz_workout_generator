@@ -77,7 +77,7 @@ export default class WorkoutIndex extends Component {
                     onClick={event => this.handleClick(event)}
                     />
                 </div>
-                <h3> ---Workout and Equiptment---  </h3>
+                <h3> ---Workout and Equipment---  </h3>
                 <table id="workout-index-table">
                     <tbody>
                         {this.renderComponents()}
